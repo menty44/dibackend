@@ -1,6 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
 const movies = require('./routes/movies') ;
+const series = require('./routes/series') ;
 const users = require('./routes/users');
 const bodyParser = require('body-parser');
 const mongoose = require('./config/database'); //database configuration
@@ -24,6 +25,8 @@ app.use('/users', users);
 
 // private route
 app.use('/movies', validateUser, movies);
+
+app.use('/series', validateUser, series);
 
 
 app.get('/favicon.ico', function(req, res) {
