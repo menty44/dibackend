@@ -4,7 +4,7 @@
   "description": "Build Movie REST API with nodejs, express, mongodb and jwt",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 10000"
   },
   "keywords": [
     "Node",
@@ -24,5 +24,9 @@
     "morgan": "1.9.0",
     "chalk": "^2.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  }
 }
