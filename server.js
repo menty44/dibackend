@@ -66,8 +66,13 @@ app.use(function(err, req, res, next) {
 
 });
 
-app.listen(3000, function(){
-	console.log('Node server listening on port 3000');
+// Constants
+const PORT = 3000;
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST, function(){
+	// console.log('Node server listening on port 3000');
+    console.log(`Node server Running on http://${HOST}:${PORT}`);
 });
 
 module.exports = app.listen(3001);

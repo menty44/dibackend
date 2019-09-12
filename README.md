@@ -12,5 +12,7 @@
 
 * Private endpoints cannot run without supplying x-access-token in the headers
 
+* To run the tests issue the command npm test 
+
  
 
